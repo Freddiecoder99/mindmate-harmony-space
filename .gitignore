@@ -1,0 +1,6 @@
+.jaseci_logs/
+js.session
+*.pyc
+__pycache__/
+venv/
+.env
