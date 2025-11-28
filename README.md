@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Create project documentation
 cat > README.md << 'EOF'
 # MindMate Harmony Space 🧠
@@ -37,3 +38,7 @@ python src/emotional_ai.py
 
 # Jaclang version (when working)
 jac run src/mindmate.jac
+=======
+# mindmate-harmony-space
+An AI-driven mental wellbeing companion built with Jaseci/JacLang. Features OSP-based emotional pattern tracking, multi-agent byLLM support system, and interactive Jac-Client dashboard. Helps users understand emotional triggers, build resilience, and receive personalized coping strategies through intelligent graph-based analysis.
+>>>>>>> upstream/main

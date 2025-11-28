@@ -1,7 +1,13 @@
-.jaseci_logs/
-js.session
-*.pyc
 __pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+env/
 venv/
-.env
+.mypy_cache
+.dmypy.json
+dmypy.json
+.jac/
+*.jac
 mindmate_clean/
