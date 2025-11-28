@@ -1,0 +1,13 @@
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+env/
+venv/
+.mypy_cache
+.dmypy.json
+dmypy.json
+.jac/
+*.jac
+mindmate_clean/
