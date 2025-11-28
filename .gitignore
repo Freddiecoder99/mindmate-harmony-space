@@ -4,3 +4,4 @@ js.session
 __pycache__/
 venv/
 .env
+mindmate_clean/
