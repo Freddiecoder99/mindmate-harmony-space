@@ -1,0 +1,20 @@
+2025-11-27 16:50:39,965 - ERROR - jac_code_to_ast: Parse errors encountered - <jaseci.jac.ir.ast_builder.JacAstBuilder object at 0x7d3367765f00>
+2025-11-27 16:50:39,966 - ERROR - compile_jac: mindmate.jac: Invalid syntax in Jac code!
+2025-11-27 16:50:39,966 - ERROR - compile_jac: mindmate.jac: line 5:8 - unparsed:mindmate.jac:0:0: - mismatched input 'context' expecting {'anchor', 'private', NAME}
+2025-11-27 16:50:39,967 - ERROR - compile_jac: mindmate.jac: line 28:33 - unparsed:mindmate.jac:0:0: - no viable alternative at input 'here-->'
+2025-11-27 16:50:39,968 - ERROR - compile_jac: mindmate.jac: line 31:12 - unparsed:mindmate.jac:0:0: - mismatched input 'context' expecting NAME
+2025-11-27 16:50:39,968 - ERROR - compile_jac: mindmate.jac: line 32:8 - unparsed:mindmate.jac:0:0: - extraneous input ')' expecting ';'
+2025-11-27 16:50:39,969 - ERROR - compile_jac: mindmate.jac: line 39:19 - unparsed:mindmate.jac:0:0: - no viable alternative at input 'here-->'
+2025-11-27 16:50:39,970 - ERROR - compile_jac: mindmate.jac: line 39:23 - unparsed:mindmate.jac:0:0: - mismatched input 'graph::' expecting ';'
+2025-11-27 16:50:39,971 - ERROR - register: mindmate.jac: Code not registered
+2025-11-27 16:52:23,109 - ERROR - jac_code_to_ast: Parse errors encountered - <jaseci.jac.ir.ast_builder.JacAstBuilder object at 0x7707ad719c00>
+2025-11-27 16:52:23,110 - ERROR - compile_jac: mindmate.jac: Invalid syntax in Jac code!
+2025-11-27 16:52:23,110 - ERROR - compile_jac: mindmate.jac: line 5:8 - unparsed:mindmate.jac:0:0: - mismatched input 'context' expecting {'anchor', 'private', NAME}
+2025-11-27 16:52:23,111 - ERROR - register: mindmate.jac: Code not registered
+2025-11-27 16:54:30,995 - ERROR - jac_code_to_ast: Parse errors encountered - <jaseci.jac.ir.ast_builder.JacAstBuilder object at 0x7e53a1f09ed0>
+2025-11-27 16:54:30,998 - ERROR - compile_jac: mindmate.jac: Invalid syntax in Jac code!
+2025-11-27 16:54:30,999 - ERROR - compile_jac: mindmate.jac: line 5:8 - unparsed:mindmate.jac:0:0: - mismatched input 'context' expecting {'anchor', 'private', NAME}
+2025-11-27 16:54:30,999 - ERROR - register: mindmate.jac: Code not registered
+2025-11-27 16:56:32,476 - ERROR - rt_error: mindmate.jac:init - line 42, col 0 - rule atom - Variable not defined - track_mood
+2025-11-27 16:56:32,480 - INFO - log: ['DEBUG_INFO', 1, 42, 0, 0]
+2025-11-27 16:56:32,481 - INFO - log: ['LOAD_VAR', 10, 'track_mood']

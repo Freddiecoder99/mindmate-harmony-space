@@ -9,9 +9,9 @@ node emotional_state {
 walker analyze_emotion {
     has input_mood,
     has input_situation
-    
+
     can byllm.complete
-    
+
     with entry {
         // Use byLLM for AI emotional analysis
         ai_analysis = byllm.complete(
@@ -19,7 +19,7 @@ walker analyze_emotion {
             prompt="As a compassionate mental health AI, analyze this emotional state and provide one supportive insight and one practical coping strategy. Mood: '" + input_mood + "', Situation: '" + input_situation + "'. Keep response to 2 sentences max.",
             temperature=0.7
         )
-        
+
         // Create emotional state with AI analysis
         new_emotion = spawn here ++> node::emotional_state
         new_emotion.timestamp = std.time_now()
@@ -27,7 +27,7 @@ walker analyze_emotion {
         new_emotion.situation = input_situation
         new_emotion.ai_advice = ai_analysis
         new_emotion.emotional_pattern = "ai_analyzed"
-        
+
         report "🤖 BYLLM Emotional Analysis: " + ai_analysis
     }
 }
@@ -35,9 +35,9 @@ walker analyze_emotion {
 walker init {
     has input_mood = "overwhelmed",
     has input_situation = "multiple deadlines"
-    
+
     std.out("MindMate BYLLM AI System Ready! 🧠💫")
-    
+
     // Call the analyze_emotion walker
     take --> node::emotional_state
     spawn here walker::analyze_emotion(input_mood=input_mood, input_situation=input_situation)
