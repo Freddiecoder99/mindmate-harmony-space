@@ -1,0 +1,5 @@
+jaseci==1.4.0.9
+jaclang==0.7.19
+flask==3.0.0
+flask-cors==4.0.0
+python-dotenv==1.0.0

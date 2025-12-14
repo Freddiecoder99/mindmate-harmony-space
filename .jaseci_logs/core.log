@@ -75,3 +75,5 @@
 2025-12-03 13:53:14,936 - ERROR - compile_jac: main.jac: line 100:88 - unparsed:main.jac:0:0: - missing ';' at 'Your'
 2025-12-03 13:53:14,937 - ERROR - compile_jac: main.jac: line 100:110 - unparsed:main.jac:0:0: - extraneous input ')' expecting ';'
 2025-12-03 13:53:14,937 - ERROR - register: main.jac: Code not registered
+2025-12-14 14:16:23,485 - ERROR - start: Skipping RedisService due to initialization failure!
+ConnectionError: Error 111 connecting to localhost:6379. Connection refused.
