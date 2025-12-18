@@ -1,9 +1,12 @@
 import { useState } from 'react';
 import '../App.css';
+import ChatCompanion from './ChatCompanion.jsx';
+import Analytics from './Analytics.jsx';
 
 const API_URL = 'http://localhost:5000/api';
 
 function MindMateApp() {
+  const [activeTab, setActiveTab] = useState('chat'); // 'chat' or 'analytics'
   const [emotion, setEmotion] = useState('Neutral');
   const [intensity, setIntensity] = useState(5);
   const [triggers, setTriggers] = useState('');
@@ -56,101 +59,129 @@ function MindMateApp() {
       <header className="app-header">
         <h1>🧠 MindMate Harmony Space</h1>
         <p className="subtitle">Your AI-Powered Emotional Wellness Companion</p>
+        
+        {/* Tab Navigation */}
+        <div className="tab-navigation">
+          <button 
+            className={`tab-btn ${activeTab === 'chat' ? 'active' : ''}`}
+            onClick={() => setActiveTab('chat')}
+          >
+            💬 AI Companion
+          </button>
+          <button 
+            className={`tab-btn ${activeTab === 'analytics' ? 'active' : ''}`}
+            onClick={() => setActiveTab('analytics')}
+          >
+            📊 Analytics
+          </button>
+          <button 
+            className={`tab-btn ${activeTab === 'tracker' ? 'active' : ''}`}
+            onClick={() => setActiveTab('tracker')}
+          >
+            📝 Quick Mood Log
+          </button>
+        </div>
       </header>
 
-      <div className="main-content">
-        <div className="mood-tracker-card">
-          <h2>✨ How are you feeling?</h2>
-          
-          <div className="form-group">
-            <label>Emotion:</label>
-            <select 
-              value={emotion} 
-              onChange={(e) => setEmotion(e.target.value)}
-              className="emotion-select"
-            >
-              {emotions.map(em => (
-                <option key={em} value={em}>{em}</option>
-              ))}
-            </select>
-          </div>
-
-          <div className="form-group">
-            <label>Intensity: {intensity}</label>
-            <input 
-              type="range" 
-              min="1" 
-              max="10" 
-              value={intensity}
-              onChange={(e) => setIntensity(e.target.value)}
-              className="intensity-slider"
-            />
-            <div className="intensity-labels">
-              <span>Low</span>
-              <span>High</span>
-            </div>
-          </div>
-
-          <div className="form-group">
-            <label>Triggers (comma separated):</label>
-            <input 
-              type="text"
-              placeholder="e.g., work, traffic, argument"
-              value={triggers}
-              onChange={(e) => setTriggers(e.target.value)}
-              className="triggers-input"
-            />
-          </div>
-
-          <div className="button-group">
-            <button onClick={logMood} className="btn btn-primary">
-              💾 Log Mood
-            </button>
-            <button onClick={clearLogs} className="btn btn-secondary">
-              🗑️ Clear Logs
-            </button>
-          </div>
-
-          {message && (
-            <div className={`message ${message.includes('❌') ? 'error' : 'success'}`}>
-              {message}
-            </div>
-          )}
+      {/* Content based on active tab */}
+      {activeTab === 'chat' && (
+        <div className="chat-section">
+          <ChatCompanion />
         </div>
+      )}
 
-        <div className="mood-history-card">
-          <h2>📊 Logged Moods</h2>
-          {moods.length === 0 ? (
-            <p className="empty-state">No moods logged yet. Start tracking your emotional journey!</p>
-          ) : (
-            <div className="mood-list">
-              {moods.map((mood, index) => (
-                <div key={index} className="mood-item">
-                  <div className="mood-emotion">{mood.emotion}</div>
-                  <div className="mood-details">
-                    <span>Intensity: {mood.intensity}/10</span>
-                    {mood.triggers && <span>Triggers: {mood.triggers}</span>}
-                    <span className="mood-time">{mood.timestamp}</span>
+      {activeTab === 'analytics' && (
+        <div className="analytics-section">
+          <Analytics />
+        </div>
+      )}
+
+      {activeTab === 'tracker' && (
+        <div className="main-content">
+          <div className="mood-tracker-card">
+            <h2>✨ Quick Mood Check-in</h2>
+            
+            <div className="form-group">
+              <label>Emotion:</label>
+              <select 
+                value={emotion} 
+                onChange={(e) => setEmotion(e.target.value)}
+                className="emotion-select"
+              >
+                {emotions.map(em => (
+                  <option key={em} value={em}>{em}</option>
+                ))}
+              </select>
+            </div>
+
+            <div className="form-group">
+              <label>Intensity: {intensity}</label>
+              <input 
+                type="range" 
+                min="1" 
+                max="10" 
+                value={intensity}
+                onChange={(e) => setIntensity(e.target.value)}
+                className="intensity-slider"
+              />
+              <div className="intensity-labels">
+                <span>Low</span>
+                <span>High</span>
+              </div>
+            </div>
+
+            <div className="form-group">
+              <label>Triggers (comma separated):</label>
+              <input 
+                type="text"
+                placeholder="e.g., work, traffic, argument"
+                value={triggers}
+                onChange={(e) => setTriggers(e.target.value)}
+                className="triggers-input"
+              />
+            </div>
+
+            <div className="button-group">
+              <button onClick={logMood} className="btn btn-primary">
+                💾 Log Mood
+              </button>
+              <button onClick={clearLogs} className="btn btn-secondary">
+                🗑️ Clear Logs
+              </button>
+            </div>
+
+            {message && (
+              <div className={`message ${message.includes('❌') ? 'error' : 'success'}`}>
+                {message}
+              </div>
+            )}
+          </div>
+
+          <div className="mood-history-card">
+            <h2>📊 Recent Entries</h2>
+            {moods.length === 0 ? (
+              <p className="empty-state">No moods logged yet. Use the AI chat for automatic tracking!</p>
+            ) : (
+              <div className="mood-list">
+                {moods.slice(-5).reverse().map((mood, index) => (
+                  <div key={index} className="mood-item">
+                    <div className="mood-emotion">{mood.emotion}</div>
+                    <div className="mood-details">
+                      <span>Intensity: {mood.intensity}/10</span>
+                      {mood.triggers && <span>Triggers: {mood.triggers}</span>}
+                      <span className="mood-time">{mood.timestamp}</span>
+                    </div>
                   </div>
-                </div>
-              ))}
-            </div>
-          )}
+                ))}
+              </div>
+            )}
+          </div>
         </div>
-
-        <div className="stats-card">
-          <h2>📈 Current Streak</h2>
-          <div className="stat-value">{moods.length}</div>
-          <p>moods logged in this session</p>
-          <p style={{marginTop: '15px', fontSize: '0.9rem', color: '#666'}}>
-            Keep tracking your emotional wellness journey! 🌱
-          </p>
-        </div>
-      </div>
+      )}
 
       <footer className="app-footer">
         <p>⚠️ MindMate is a wellness tool, not a replacement for professional mental health care.</p>
-        <p>Powered by Jaseci + JacLang | OSP Graph + byLLM AI</p>
+        <p>Powered by Groq AI (Llama 3.3 70B) | Jaseci + JacLang | OSP Graph Database</p>
       </footer>
     </div>
   );

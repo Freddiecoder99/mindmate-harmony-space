@@ -1,63 +1,94 @@
-<<<<<<< HEAD
-# React + Vite
+# 🧠 MindMate Harmony Space by MetaUnit Group
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**Real AI-Powered Mental Wellness Companion**
 
-Currently, two official plugins are available:
+[![Demo](https://img.shields.io/badge/Demo-Live-success)]()
+[![AI](https://img.shields.io/badge/AI-Groq%20Llama%203.3-blue)]()
+[![Framework](https://img.shields.io/badge/Framework-Jaseci-purple)]()
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🌟 What Makes This Special
 
-## React Compiler
+### Real Intelligence
+- **Groq AI (Llama 3.3 70B)**: Not simulated - actual intelligent conversations
+- **Context-aware**: Remembers conversation history
+- **Therapeutic approach**: Validated CBT and mindfulness techniques
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+### Meaningful Analytics
+- **7-day mood trends**: See patterns over time
+- **Emotion breakdown**: Understand your emotional landscape
+- **Trigger analysis**: Identify what affects you most
+- **AI-generated insights**: Personalized recommendations
 
-## Expanding the ESLint configuration
+### Professional Features
+- **Multiple conversation threads**: Separate topics by day
+- **Persistent storage**: Your data is saved
+- **Export capability**: Share with therapist
+- **Crisis detection**: Provides immediate resources
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
-=======
-<<<<<<< HEAD
-# Create project documentation
-cat > README.md << 'EOF'
-# MindMate Harmony Space 🧠
-## AI Mental-Wellbeing Companion
-### Team MetaUnit: Freddie Bundi, Lazarus Gatimu, Michelle Alex
+## 🏆 Hackathon Requirements Met
 
-## Project Overview
-Building a digital companion for emotional tracking and mental wellbeing support using Jaclang and byLLM.
+✅ **OSP Graph Database**: Emotional states, triggers, and relationships  
+✅ **byLLM Multi-Agent**: Emotion analyzer + Response generator  
+✅ **Jac Client**: React-based frontend with real-time updates  
+✅ **Non-trivial OSP**: Complex graph traversal and pattern detection  
+✅ **Generative AI**: Therapeutic responses and insights  
+✅ **Analytical AI**: Emotion detection and trend analysis  
 
-## Features
-- ✅ Mood logging and tracking
-- 📊 Emotional pattern detection  
-- 💡 AI-powered coping strategies
-- 📱 Simple web interface
+---
 
-## Technical Stack
-- **Backend**: Jaclang + byLLM
-- **Frontend**: Jac Client (or simple web UI)
-- **AI**: Emotional analysis with byLLM
+## 🚀 Quick Start
 
-## Team Roles
-- **Freddie**: [Specify role]
-- **Lazarus**: [Specify role] 
-- **Michelle**: [Specify role]
+### Prerequisites
+- Python 3.8+
+- Node.js 20+
+- Groq API Key (free at console.groq.com)
 
-## Progress Tracking
-- [x] Python prototype working
-- [ ] Jaclang core implemented
-- [ ] byLLM integration complete
-- [ ] Frontend interface built
-- [ ] Video demo recorded
+### Setup
 
-## How to Run
-```bash
-# Python prototype
-python src/emotional_ai.py
+1. **Backend:**
+bash
+cd backend
+pip install -r requirements.txt
+echo "GROQ_API_KEY=your_key_here" > .env
+python api_server.py
 
-# Jaclang version (when working)
-jac run src/mindmate.jac
-=======
-# mindmate-harmony-space
-An AI-driven mental wellbeing companion built with Jaseci/JacLang. Features OSP-based emotional pattern tracking, multi-agent byLLM support system, and interactive Jac-Client dashboard. Helps users understand emotional triggers, build resilience, and receive personalized coping strategies through intelligent graph-based analysis.
->>>>>>> upstream/main
->>>>>>> 8dbc5fc566a3dc506979e976957f7aa14fedabfd
+
+2. **Frontend:**
+bash
+npm install
+npm run dev
+
+
+3. **Open:** http://localhost:3000
+
+## 📊 Key Features Demo
+
+### AI Chat
+- Natural, empathetic conversations
+- Remembers context across messages
+- Provides actionable coping strategies
+
+### Analytics Dashboard
+- Real-time mood tracking
+- Visual trend analysis
+- Personalized insights
+
+### Quick Mood Log
+- Manual mood entries
+- Intensity tracking
+- Trigger identification
+
+## 🎯 Future Enhancements
+- Voice-to-text integration
+- Mobile app (React Native)
+- Therapist collaboration portal
+- Goal tracking system
+- Reminder notifications
+
+## 👥 Team
+- Fredrick - Full Stack Development
+- Lazarus - backend
+- Michelle - frontend
+
+## 📄 License
+MIT License - Built for Jaseci AI Hackathon 2025

@@ -1,0 +1,85 @@
+2025-12-03 10:57:43,476 - ERROR - interface_error: Internal Exception: [Errno 2] No such file or directory: 'byllm_test.jac'
+2025-12-03 11:01:52,642 - ERROR - spawn_architype: byllm_test.jac: Unable to spawn walker architype init!
+2025-12-03 11:01:52,643 - ERROR - run_architype: byllm_test.jac: Unable to spawn architype ['init', 'walker']!
+2025-12-03 11:02:32,440 - ERROR - spawn_architype: byllm_test.jac: Unable to spawn walker architype init!
+2025-12-03 11:02:32,441 - ERROR - run_architype: byllm_test.jac: Unable to spawn architype ['init', 'walker']!
+2025-12-03 11:03:16,005 - ERROR - spawn_architype: byllm_test.jac: Unable to spawn walker architype init!
+2025-12-03 11:03:16,006 - ERROR - run_architype: byllm_test.jac: Unable to spawn architype ['init', 'walker']!
+2025-12-03 11:13:52,001 - ERROR - rt_error: byllm_test.jac:simple_byllm - line 20, col 29 - rule LPAREN - Unable to execute ability
+2025-12-03 11:22:10,258 - ERROR - jac_code_to_ast: Parse errors encountered - <jaseci.jac.ir.ast_builder.JacAstBuilder object at 0x7e85a0c11d50>
+2025-12-03 11:22:10,260 - ERROR - compile_jac: step1_test.jac: Invalid syntax in Jac code!
+2025-12-03 11:22:10,261 - ERROR - compile_jac: step1_test.jac: line 1:7 - unparsed:step1_test.jac:0:0: - mismatched input 'test' expecting NAME
+2025-12-03 11:22:10,262 - ERROR - compile_jac: step1_test.jac: line 1:12 - unparsed:step1_test.jac:0:0: - extraneous input '{' expecting {STRING, NAME}
+2025-12-03 11:22:10,263 - ERROR - compile_jac: step1_test.jac: line 1:17 - unparsed:step1_test.jac:0:0: - mismatched input '.' expecting STRING
+2025-12-03 11:22:10,264 - ERROR - register: step1_test.jac: Code not registered
+2025-12-03 11:49:07,450 - ERROR - interface_error: Internal Exception: [Errno 2] No such file or directory: 'jac/mindmate_byllm.jac'
+2025-12-03 12:15:43,370 - ERROR - jac_code_to_ast: Parse errors encountered - <jaseci.jac.ir.ast_builder.JacAstBuilder object at 0x748e3e515e70>
+2025-12-03 12:15:43,373 - ERROR - compile_jac: emotional_ai_jaclang.jac: Invalid syntax in Jac code!
+2025-12-03 12:15:43,373 - ERROR - compile_jac: emotional_ai_jaclang.jac: line 3:4 - unparsed:emotional_ai_jaclang.jac:0:0: - extraneous input 'has' expecting {'anchor', 'private', NAME}
+2025-12-03 12:15:43,374 - ERROR - compile_jac: emotional_ai_jaclang.jac: line 4:4 - unparsed:emotional_ai_jaclang.jac:0:0: - extraneous input 'has' expecting {'anchor', 'private', NAME}
+2025-12-03 12:15:43,375 - ERROR - compile_jac: emotional_ai_jaclang.jac: line 5:4 - unparsed:emotional_ai_jaclang.jac:0:0: - extraneous input 'has' expecting {'anchor', 'private', NAME}
+2025-12-03 12:15:43,375 - ERROR - compile_jac: emotional_ai_jaclang.jac: line 6:4 - unparsed:emotional_ai_jaclang.jac:0:0: - extraneous input 'has' expecting {'anchor', 'private', NAME}
+2025-12-03 12:15:43,376 - ERROR - compile_jac: emotional_ai_jaclang.jac: line 7:0 - unparsed:emotional_ai_jaclang.jac:0:0: - extraneous input '}' expecting {';', ','}
+2025-12-03 12:15:43,376 - ERROR - compile_jac: emotional_ai_jaclang.jac: line 11:4 - unparsed:emotional_ai_jaclang.jac:0:0: - extraneous input 'has' expecting {'anchor', 'private', NAME}
+2025-12-03 12:15:43,377 - ERROR - compile_jac: emotional_ai_jaclang.jac: line 13:4 - unparsed:emotional_ai_jaclang.jac:0:0: - extraneous input 'with' expecting {<EOF>, 'type', 'graph', 'node', '}', 'edge', 'walker', 'async', 'test', ';', 'has', 'global', ',', 'can'}
+2025-12-03 12:15:43,378 - ERROR - compile_jac: emotional_ai_jaclang.jac: line 28:8 - unparsed:emotional_ai_jaclang.jac:0:0: - mismatched input 'new_emotion' expecting {'++>', '<++', '<+', '<++>', '+'}
+2025-12-03 12:15:43,379 - ERROR - compile_jac: emotional_ai_jaclang.jac: line 29:8 - unparsed:emotional_ai_jaclang.jac:0:0: - missing ';' at 'new_emotion'
+2025-12-03 12:15:43,379 - ERROR - compile_jac: emotional_ai_jaclang.jac: line 30:8 - unparsed:emotional_ai_jaclang.jac:0:0: - missing ';' at 'new_emotion'
+2025-12-03 12:15:43,380 - ERROR - compile_jac: emotional_ai_jaclang.jac: line 31:8 - unparsed:emotional_ai_jaclang.jac:0:0: - missing ';' at 'new_emotion'
+2025-12-03 12:15:43,381 - ERROR - compile_jac: emotional_ai_jaclang.jac: line 32:8 - unparsed:emotional_ai_jaclang.jac:0:0: - missing ';' at 'new_emotion'
+2025-12-03 12:15:43,382 - ERROR - compile_jac: emotional_ai_jaclang.jac: line 34:8 - unparsed:emotional_ai_jaclang.jac:0:0: - missing ';' at 'std'
+2025-12-03 12:15:43,383 - ERROR - compile_jac: emotional_ai_jaclang.jac: line 35:8 - unparsed:emotional_ai_jaclang.jac:0:0: - missing ';' at 'report'
+2025-12-03 12:15:43,384 - ERROR - compile_jac: emotional_ai_jaclang.jac: line 36:4 - unparsed:emotional_ai_jaclang.jac:0:0: - missing ';' at '}'
+2025-12-03 12:15:43,386 - ERROR - compile_jac: emotional_ai_jaclang.jac: line 41:4 - unparsed:emotional_ai_jaclang.jac:0:0: - extraneous input 'has' expecting {'anchor', 'private', NAME}
+2025-12-03 12:15:43,388 - ERROR - compile_jac: emotional_ai_jaclang.jac: line 43:4 - unparsed:emotional_ai_jaclang.jac:0:0: - missing ';' at 'std'
+2025-12-03 12:15:43,389 - ERROR - compile_jac: emotional_ai_jaclang.jac: line 44:4 - unparsed:emotional_ai_jaclang.jac:0:0: - missing ';' at 'std'
+2025-12-03 12:15:43,390 - ERROR - compile_jac: emotional_ai_jaclang.jac: line 47:4 - unparsed:emotional_ai_jaclang.jac:0:0: - missing ';' at 'take'
+2025-12-03 12:15:43,391 - ERROR - compile_jac: emotional_ai_jaclang.jac: line 48:4 - unparsed:emotional_ai_jaclang.jac:0:0: - mismatched input 'spawn' expecting {';', 'else'}
+2025-12-03 12:15:43,392 - ERROR - compile_jac: emotional_ai_jaclang.jac: line 50:4 - unparsed:emotional_ai_jaclang.jac:0:0: - missing ';' at 'std'
+2025-12-03 12:15:43,393 - ERROR - compile_jac: emotional_ai_jaclang.jac: line 51:0 - unparsed:emotional_ai_jaclang.jac:0:0: - missing ';' at '}'
+2025-12-03 12:15:43,394 - ERROR - register: emotional_ai_jaclang.jac: Code not registered
+2025-12-03 13:22:04,128 - ERROR - jac_code_to_ast: Parse errors encountered - <jaseci.jac.ir.ast_builder.JacAstBuilder object at 0x71bd6b985ff0>
+2025-12-03 13:22:04,131 - ERROR - compile_jac: emotional_ai_jaclang.jac: Invalid syntax in Jac code!
+2025-12-03 13:22:04,131 - ERROR - compile_jac: emotional_ai_jaclang.jac: line 3:4 - unparsed:emotional_ai_jaclang.jac:0:0: - extraneous input 'has' expecting {'anchor', 'private', NAME}
+2025-12-03 13:22:04,132 - ERROR - compile_jac: emotional_ai_jaclang.jac: line 4:4 - unparsed:emotional_ai_jaclang.jac:0:0: - extraneous input 'has' expecting {'anchor', 'private', NAME}
+2025-12-03 13:22:04,133 - ERROR - compile_jac: emotional_ai_jaclang.jac: line 5:4 - unparsed:emotional_ai_jaclang.jac:0:0: - extraneous input 'has' expecting {'anchor', 'private', NAME}
+2025-12-03 13:22:04,133 - ERROR - compile_jac: emotional_ai_jaclang.jac: line 6:4 - unparsed:emotional_ai_jaclang.jac:0:0: - extraneous input 'has' expecting {'anchor', 'private', NAME}
+2025-12-03 13:22:04,134 - ERROR - compile_jac: emotional_ai_jaclang.jac: line 7:0 - unparsed:emotional_ai_jaclang.jac:0:0: - extraneous input '}' expecting {';', ','}
+2025-12-03 13:22:04,135 - ERROR - compile_jac: emotional_ai_jaclang.jac: line 11:4 - unparsed:emotional_ai_jaclang.jac:0:0: - extraneous input 'has' expecting {'anchor', 'private', NAME}
+2025-12-03 13:22:04,135 - ERROR - compile_jac: emotional_ai_jaclang.jac: line 13:4 - unparsed:emotional_ai_jaclang.jac:0:0: - missing ';' at 'can'
+2025-12-03 13:22:04,136 - ERROR - compile_jac: emotional_ai_jaclang.jac: line 15:4 - unparsed:emotional_ai_jaclang.jac:0:0: - mismatched input 'with' expecting {'::', ';', ','}
+2025-12-03 13:22:04,137 - ERROR - compile_jac: emotional_ai_jaclang.jac: line 24:8 - unparsed:emotional_ai_jaclang.jac:0:0: - missing ';' at 'new_emotion'
+2025-12-03 13:22:04,138 - ERROR - compile_jac: emotional_ai_jaclang.jac: line 25:8 - unparsed:emotional_ai_jaclang.jac:0:0: - mismatched input 'new_emotion' expecting {'++>', '<++', '<+', '<++>', '+'}
+2025-12-03 13:22:04,139 - ERROR - compile_jac: emotional_ai_jaclang.jac: line 26:8 - unparsed:emotional_ai_jaclang.jac:0:0: - missing ';' at 'new_emotion'
+2025-12-03 13:22:04,140 - ERROR - compile_jac: emotional_ai_jaclang.jac: line 27:8 - unparsed:emotional_ai_jaclang.jac:0:0: - missing ';' at 'new_emotion'
+2025-12-03 13:22:04,142 - ERROR - compile_jac: emotional_ai_jaclang.jac: line 28:8 - unparsed:emotional_ai_jaclang.jac:0:0: - missing ';' at 'new_emotion'
+2025-12-03 13:22:04,143 - ERROR - compile_jac: emotional_ai_jaclang.jac: line 29:8 - unparsed:emotional_ai_jaclang.jac:0:0: - missing ';' at 'new_emotion'
+2025-12-03 13:22:04,145 - ERROR - compile_jac: emotional_ai_jaclang.jac: line 31:8 - unparsed:emotional_ai_jaclang.jac:0:0: - missing ';' at 'report'
+2025-12-03 13:22:04,146 - ERROR - compile_jac: emotional_ai_jaclang.jac: line 32:4 - unparsed:emotional_ai_jaclang.jac:0:0: - missing ';' at '}'
+2025-12-03 13:22:04,148 - ERROR - compile_jac: emotional_ai_jaclang.jac: line 37:4 - unparsed:emotional_ai_jaclang.jac:0:0: - extraneous input 'has' expecting {'anchor', 'private', NAME}
+2025-12-03 13:22:04,149 - ERROR - compile_jac: emotional_ai_jaclang.jac: line 39:4 - unparsed:emotional_ai_jaclang.jac:0:0: - extraneous input 'std' expecting {<EOF>, 'type', 'graph', 'node', '}', 'edge', 'walker', 'async', 'test', ';', 'has', 'global', ',', 'can'}
+2025-12-03 13:22:04,151 - ERROR - compile_jac: emotional_ai_jaclang.jac: line 42:4 - unparsed:emotional_ai_jaclang.jac:0:0: - missing ';' at 'take'
+2025-12-03 13:22:04,153 - ERROR - compile_jac: emotional_ai_jaclang.jac: line 43:4 - unparsed:emotional_ai_jaclang.jac:0:0: - mismatched input 'spawn' expecting {';', 'else'}
+2025-12-03 13:22:04,154 - ERROR - compile_jac: emotional_ai_jaclang.jac: line 44:0 - unparsed:emotional_ai_jaclang.jac:0:0: - missing ';' at '}'
+2025-12-03 13:22:04,155 - ERROR - register: emotional_ai_jaclang.jac: Code not registered
+2025-12-03 13:53:14,929 - ERROR - jac_code_to_ast: Parse errors encountered - <jaseci.jac.ir.ast_builder.JacAstBuilder object at 0x7ee20171de10>
+2025-12-03 13:53:14,931 - ERROR - compile_jac: main.jac: Invalid syntax in Jac code!
+2025-12-03 13:53:14,932 - ERROR - compile_jac: main.jac: line 35:8 - unparsed:main.jac:0:0: - extraneous input 'elif' expecting {'-->', '<--', '<-', '<-->', 'str', 'int', 'float', 'list', 'dict', 'bool', 'type', 'node', 'ignore', 'take', 'spawn', ':', '::', NODE_DBL_COLON, '{', '}', 'edge', 'sync', 'assert', 'if', 'for', 'while', 'continue', 'break', 'disengage', 'yield', 'skip', 'report', 'destroy', 'try', '&', NOT, 'global', '+', '-', '*', '(', '[', FLOAT, STRING, BOOL, INT, 'null', NAME}
+2025-12-03 13:53:14,932 - ERROR - compile_jac: main.jac: line 35:51 - unparsed:main.jac:0:0: - missing ';' at ':'
+2025-12-03 13:53:14,933 - ERROR - compile_jac: main.jac: line 40:8 - unparsed:main.jac:0:0: - extraneous input 'elif' expecting {<EOF>, '-->', '<--', '<-', '<-->', 'str', 'int', 'float', 'list', 'dict', 'bool', 'type', 'graph', 'node', 'ignore', 'take', 'spawn', 'with', ':', '::', NODE_DBL_COLON, '{', '}', 'edge', 'walker', 'async', 'sync', 'test', 'assert', 'if', 'for', 'while', 'continue', 'break', 'disengage', 'yield', 'skip', 'report', 'destroy', 'try', '&', NOT, 'global', '+', '-', '*', '(', '[', FLOAT, STRING, BOOL, INT, 'null', NAME}
+2025-12-03 13:53:14,933 - ERROR - compile_jac: main.jac: line 40:48 - unparsed:main.jac:0:0: - missing ';' at ':'
+2025-12-03 13:53:14,934 - ERROR - compile_jac: main.jac: line 45:8 - unparsed:main.jac:0:0: - extraneous input 'else' expecting {<EOF>, '-->', '<--', '<-', '<-->', 'str', 'int', 'float', 'list', 'dict', 'bool', 'type', 'graph', 'node', 'ignore', 'take', 'spawn', 'with', ':', '::', NODE_DBL_COLON, '{', '}', 'edge', 'walker', 'async', 'sync', 'test', 'assert', 'if', 'for', 'while', 'continue', 'break', 'disengage', 'yield', 'skip', 'report', 'destroy', 'try', '&', NOT, 'global', '+', '-', '*', '(', '[', FLOAT, STRING, BOOL, INT, 'null', NAME}
+2025-12-03 13:53:14,934 - ERROR - compile_jac: main.jac: line 70:26 - unparsed:main.jac:0:0: - no viable alternative at input 'here-->'
+2025-12-03 13:53:14,935 - ERROR - compile_jac: main.jac: line 94:22 - unparsed:main.jac:0:0: - no viable alternative at input 'herenode::'
+2025-12-03 13:53:14,935 - ERROR - compile_jac: main.jac: line 100:72 - unparsed:main.jac:0:0: - mismatched input 'user_input' expecting ')'
+2025-12-03 13:53:14,936 - ERROR - compile_jac: main.jac: line 100:88 - unparsed:main.jac:0:0: - missing ';' at 'Your'
+2025-12-03 13:53:14,937 - ERROR - compile_jac: main.jac: line 100:110 - unparsed:main.jac:0:0: - extraneous input ')' expecting ';'
+2025-12-03 13:53:14,937 - ERROR - register: main.jac: Code not registered
+2025-12-14 14:16:23,485 - ERROR - start: Skipping RedisService due to initialization failure!
+ConnectionError: Error 111 connecting to localhost:6379. Connection refused.
+2025-12-15 12:03:46,332 - ERROR - start: Skipping RedisService due to initialization failure!
+ConnectionError: Error 111 connecting to localhost:6379. Connection refused.
+2025-12-15 12:04:50,328 - ERROR - start: Skipping RedisService due to initialization failure!
+ConnectionError: Error 111 connecting to localhost:6379. Connection refused.
+2025-12-15 12:05:03,946 - ERROR - start: Skipping RedisService due to initialization failure!
+ConnectionError: Error 111 connecting to localhost:6379. Connection refused.
